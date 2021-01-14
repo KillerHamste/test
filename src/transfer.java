@@ -2,7 +2,7 @@
 
 public class transfer {
 
-    private String finalRes = "";
+    private String finalRes = null;
     private int res1, res2;
 
     private static String[] units = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
@@ -20,7 +20,7 @@ public class transfer {
               //  System.out.println("Lenght = "+ chars.length);
                 res1 = Character.getNumericValue(chars[0]);
                 if (res1 > 0) {
-                    finalRes = units[res1];
+                    finalRes = units[res1-1];
                     System.out.println("Результат = " + finalRes);
                 } else if (res1 == 0) {
                     System.out.println("Результат = " + "Nulla");
@@ -33,7 +33,7 @@ public class transfer {
                 if (res2 > 0) {
                 //    System.out.println("res1 = " + (res1 - 1));
                 // /   System.out.println("res2 = " + (res2 - 1));
-                    finalRes = dozens[res1 - 1] + units[res2 - 1];
+                    finalRes = dozens[res1 - 1] + units[res2];
                    System.out.println("Результат = " + finalRes);
                 } else if (res2 == 0) {
                     finalRes = dozens[res1 - 1];

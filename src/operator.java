@@ -16,30 +16,31 @@ public class operator {
     }
 
     public int doOperate(int num1, int num2, String operator) {
-        int result = 0;
+        double result = 0;
 
         switch (operator) {
             case "*":
-                result = num1 * num2;
-                return result;
+                result = (int)(num1 * num2);
+                return (int)result;
 
             case "/":
-                result = (int)floor(num1 / num2)-1;
-                return result;
+                 double  f= num1/num2;
+                result = floor(f);
+                return (int)result;
 
             case "+":
                 result = num1 + num2;
-                return result;
+                return (int)result;
 
             case "-":
                 result = num1 - num2;
-                return result;
+                return (int)result;
 
             default:
                 System.out.println("что ты там мутишь ?");
         }
         ;
-        return result;
+        return (int)result;
     }
 
 }
