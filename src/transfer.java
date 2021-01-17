@@ -5,7 +5,7 @@ public class transfer {
     private String finalRes = null;
     private int res1, res2;
 
-    private static String[] units = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+    private static String[] units = {" ","I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 
     private static String[] dozens = {"X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
 
