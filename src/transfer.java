@@ -5,7 +5,7 @@ public class transfer {
     private String finalRes = null;
     private int res1, res2;
 
-    private static String[] units = {" ","I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+    private static String[] units = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 
     private static String[] dozens = {"X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
 
@@ -31,9 +31,9 @@ public class transfer {
                 res1 = Character.getNumericValue(chars[0]);
                 res2 = Character.getNumericValue(chars[1]);
                 if (res2 > 0) {
-                //    System.out.println("res1 = " + (res1 - 1));
-                // /   System.out.println("res2 = " + (res2 - 1));
-                    finalRes = dozens[res1 - 1] + units[res2];
+                System.out.println("res1 = " + res1);
+                 System.out.println("res2 = " + res2);
+                    finalRes = dozens[res1 - 1] + units[res2-1];
                    System.out.println("Результат = " + finalRes);
                 } else if (res2 == 0) {
                     finalRes = dozens[res1 - 1];
